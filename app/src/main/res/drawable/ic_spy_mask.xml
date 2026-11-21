@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Stealth Spy Mask Outer Shell -->
+    <path android:pathData="M12,42 C12,30 25,24 50,24 C75,24 88,30 88,42 C88,58 74,72 50,72 C26,72 12,58 12,42 Z
+             M24,42 C24,46 30,50 38,48 C44,46 42,36 34,36 C28,36 24,39 24,42 Z
+             M76,42 C76,39 72,36 66,36 C58,36 56,46 62,48 C70,50 76,46 76,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="45"
+                android:endColor="#6366F1"
+                android:startColor="#A855F7"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Slanted Mysterious Eye Cutouts (Left Eye Glow) -->
+    <path android:pathData="M27,42 C28,39 32,38 36,39 C40,40 40,44 37,45 C32,47 27,45 27,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="135"
+                android:endColor="#E9D5FF"
+                android:startColor="#FFFFFF"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+    <!-- Slanted Mysterious Eye Cutouts (Right Eye Glow) -->
+    <path android:pathData="M73,42 C72,39 68,38 64,39 C60,40 60,44 63,45 C68,47 73,45 73,42 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:angle="135"
+                android:endColor="#E9D5FF"
+                android:startColor="#FFFFFF"
+                android:type="linear" />
+        </aapt:attr>
+    </path>
+
+</vector>

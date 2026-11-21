@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Ambient Glow Layer -->
+    <path android:pathData="M50,10 A40,40 0 1 1 50,90 A40,40 0 1 1 50,10 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="50"
+                android:centerY="50"
+                android:gradientRadius="40">
+                <item android:offset="0" android:color="#447C3AED" />
+                <item android:offset="1" android:color="#007C3AED" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Document / Text Sheet Card Base -->
+    <path android:pathData="M24,18 C24,14.7 26.7,12 30,12 L58,12 L76,30 L76,82 C76,85.3 73.3,88 70,88 L30,88 C26.7,88 24,85.3 24,82 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="24" android:startY="12"
+                android:endX="76" android:endY="88"
+                android:startColor="#1E1535"
+                android:endColor="#0F0A1C" />
+        </aapt:attr>
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="24" android:startY="12"
+                android:endX="76" android:endY="88"
+                android:startColor="#A855F7"
+                android:endColor="#3B0764" />
+        </aapt:attr>
+    </path>
+
+    <!-- Folded Corner Sheet Detail -->
+    <path android:pathData="M58,12 L58,26 C58,28.2 59.8,30 62,30 L76,30 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="58" android:startY="12"
+                android:endX="76" android:endY="30"
+                android:startColor="#7C3AED"
+                android:endColor="#3B0764" />
+        </aapt:attr>
+    </path>
+
+    <!-- Stylized Text Lines (Text Content) -->
+    <!-- Text Line 1 (Header/Title text) -->
+    <path
+        android:pathData="M34,26 L50,26"
+        android:strokeWidth="4"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="0"
+                android:endX="50" android:endY="0"
+                android:startColor="#C084FC"
+                android:endColor="#A855F7" />
+        </aapt:attr>
+    </path>
+
+    <!-- Text Line 2 -->
+    <path
+        android:pathData="M34,38 L66,38"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="0"
+                android:endX="66" android:endY="0"
+                android:startColor="#A855F7"
+                android:endColor="#6366F1" />
+        </aapt:attr>
+    </path>
+
+    <!-- Text Line 3 -->
+    <path
+        android:pathData="M34,48 L60,48"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="0"
+                android:endX="60" android:endY="0"
+                android:startColor="#A855F7"
+                android:endColor="#818CF8" />
+        </aapt:attr>
+    </path>
+
+    <!-- Text Line 4 -->
+    <path
+        android:pathData="M34,58 L66,58"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="0"
+                android:endX="66" android:endY="0"
+                android:startColor="#6366F1"
+                android:endColor="#A855F7" />
+        </aapt:attr>
+    </path>
+
+    <!-- Text Line 5 (Short) -->
+    <path
+        android:pathData="M34,68 L48,68"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="0"
+                android:endX="48" android:endY="0"
+                android:startColor="#C084FC"
+                android:endColor="#E9D5FF" />
+        </aapt:attr>
+    </path>
+
+    <!-- Spy Magnifying Glass / Inspection Lens overlay on Text -->
+    <path
+        android:pathData="M64,64 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0"
+        android:strokeWidth="2.5">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="54" android:startY="54"
+                android:endX="74" android:endY="74"
+                android:startColor="#F3E8FF"
+                android:endColor="#A855F7" />
+        </aapt:attr>
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="64"
+                android:centerY="64"
+                android:gradientRadius="10">
+                <item android:offset="0" android:color="#44C084FC" />
+                <item android:offset="1" android:color="#111B1035" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Spy Glass Handle -->
+    <path
+        android:pathData="M71,71 L81,81"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="71" android:startY="71"
+                android:endX="81" android:endY="81"
+                android:startColor="#C084FC"
+                android:endColor="#7C3AED" />
+        </aapt:attr>
+    </path>
+
+</vector>

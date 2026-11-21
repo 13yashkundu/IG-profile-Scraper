@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Premium Dark Background Gradient Colors -->
+    <color name="bg_dark_start">#1B1035</color>
+    <color name="bg_dark_center">#110B20</color>
+    <color name="bg_dark_end">#090611</color>
+
+    <!-- Accent Purple & Indigo Gradient Colors -->
+    <color name="accent_purple_bright">#C084FC</color>
+    <color name="accent_purple">#A855F7</color>
+    <color name="accent_purple_dark">#7C3AED</color>
+    <color name="accent_indigo">#6366F1</color>
+
+    <!-- Card & Surface Colors -->
+    <color name="card_bg_dark">#161224</color>
+    <color name="card_bg_dark_elevated">#1D182E</color>
+    <color name="card_stroke_dark">#2C2542</color>
+    <color name="search_input_bg">#151122</color>
+    <color name="bottom_nav_bg">#120D1F</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#928EA7</color>
+    <color name="text_hint">#5B5673</color>
+
+    <!-- Pro Badge Colors -->
+    <color name="pro_gold_start">#F59E0B</color>
+    <color name="pro_gold_end">#D97706</color>
+    <color name="pro_badge_bg">#251B12</color>
+    <color name="pro_badge_stroke">#453019</color>
+</resources>

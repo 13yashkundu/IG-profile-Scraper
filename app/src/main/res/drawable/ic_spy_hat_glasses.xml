@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="96dp"
+    android:height="96dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Soft purple glow behind the icon (depth on dark bg) -->
+    <path android:pathData="M50,4 A46,46 0 1 1 50,96 A46,46 0 1 1 50,4 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="radial"
+                android:centerX="50"
+                android:centerY="52"
+                android:gradientRadius="46">
+                <item android:offset="0" android:color="#557C3AED" />
+                <item android:offset="1" android:color="#007C3AED" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Hat crown with centre pinch -->
+    <path android:pathData="M31,51 C29.5,33 35,15 44.5,14 C47.5,13.7 48.5,17.5 50,17.5 C51.5,17.5 52.5,13.7 55.5,14 C65,15 70.5,33 69,51 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="50" android:startY="14"
+                android:endX="50" android:endY="51"
+                android:startColor="#C084FC"
+                android:endColor="#7C3AED" />
+        </aapt:attr>
+    </path>
+
+    <!-- Hat band -->
+    <path android:pathData="M31.2,43 C40,46 60,46 68.8,43 L69,51 C60,53 40,53 31,51 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="31" android:startY="0"
+                android:endX="69" android:endY="0"
+                android:startColor="#4C1D95"
+                android:endColor="#6366F1" />
+        </aapt:attr>
+    </path>
+
+    <!-- Brim: slim, upturned ends -->
+    <path android:pathData="M6,44 C14,52 34,55 50,55 C66,55 86,52 94,44 C84,48 68,49.5 50,49.5 C32,49.5 16,48 6,44 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="6" android:startY="0"
+                android:endX="94" android:endY="0"
+                android:startColor="#A855F7"
+                android:centerColor="#C084FC"
+                android:endColor="#6366F1" />
+        </aapt:attr>
+    </path>
+
+    <!-- Left lens (aviator shape) -->
+    <path
+        android:pathData="M20,64 C20,60 24,58.5 33,58.5 C42,58.5 46,60 46,64 L45,72 C44,80 39,84 33,84 C26,84 21,80 20.5,72 Z"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="1.8"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="22" android:startY="59"
+                android:endX="44" android:endY="84"
+                android:startColor="#7C3AED"
+                android:endColor="#1B1035" />
+        </aapt:attr>
+    </path>
+
+    <!-- Right lens -->
+    <path
+        android:pathData="M80,64 C80,60 76,58.5 67,58.5 C58,58.5 54,60 54,64 L55,72 C56,80 61,84 67,84 C74,84 79,80 79.5,72 Z"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="1.8"
+        android:strokeLineJoin="round">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="56" android:startY="59"
+                android:endX="78" android:endY="84"
+                android:startColor="#7C3AED"
+                android:endColor="#1B1035" />
+        </aapt:attr>
+    </path>
+
+    <!-- Bridge -->
+    <path
+        android:pathData="M46,63 C48.5,60.5 51.5,60.5 54,63"
+        android:strokeColor="#C084FC"
+        android:strokeWidth="2.2"
+        android:strokeLineCap="round" />
+
+    <!-- Glints -->
+    <path
+        android:fillColor="#E9D5FF"
+        android:fillAlpha="0.85"
+        android:pathData="M25,66 C26,63 29,61.5 33,61.2 L31.5,64 C29,64.5 27.5,66 27,69 Z" />
+    <path
+        android:fillColor="#E9D5FF"
+        android:fillAlpha="0.85"
+        android:pathData="M75,66 C74,63 71,61.5 67,61.2 L68.5,64 C71,64.5 72.5,66 73,69 Z" />
+
+    <!-- Side-eye pupils: the "watching you" detail -->
+    <path
+        android:fillColor="#F3E8FF"
+        android:pathData="M38,72 m-2.3,0 a2.3,2.3 0 1,0 4.6,0 a2.3,2.3 0 1,0 -4.6,0" />
+    <path
+        android:fillColor="#F3E8FF"
+        android:pathData="M72,72 m-2.3,0 a2.3,2.3 0 1,0 4.6,0 a2.3,2.3 0 1,0 -4.6,0" />
+</vector>
