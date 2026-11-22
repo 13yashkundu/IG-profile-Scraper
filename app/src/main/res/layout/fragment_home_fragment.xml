@@ -9,7 +9,6 @@
     android:padding="20dp"
     tools:context=".Home_fragment">
 
-    <!-- Header Section: App Logo + Premium Styled Title -->
     <ImageView
         android:id="@+id/img_app_logo"
         android:layout_width="52dp"
@@ -173,6 +172,60 @@
 
     </LinearLayout>
 
+
+    <!-- Search Bar Container -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_search_input"
+        android:paddingStart="16dp"
+        android:paddingEnd="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/metrics_tiles_container">
+
+        <!-- Search Input -->
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:background="@null"
+            android:hint="Enter Instagram username..."
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/text_hint"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/search_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Gradient Action Button -->
+        <FrameLayout
+            android:id="@+id/search_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_purple_accent_gradient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="Search"
+                android:src="@drawable/search_icon"
+                app:tint="@color/white" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     <!-- Boxy Category Cards Scroll Container (Profile, Stories, Posts, Reels, Highlights) -->
     <HorizontalScrollView
         android:id="@+id/boxy_cards_scroll_container"
@@ -182,7 +235,7 @@
         android:scrollbars="none"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/metrics_tiles_container">
+        app:layout_constraintTop_toBottomOf="@+id/search_bar">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -330,57 +383,5 @@
 
         </LinearLayout>
     </HorizontalScrollView>
-
-    <!-- Search Bar Container -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/search_bar"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/bg_search_input"
-        android:paddingStart="16dp"
-        android:paddingEnd="6dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/boxy_cards_scroll_container">
-
-        <!-- Search Input -->
-        <EditText
-            android:id="@+id/search_input"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="12dp"
-            android:background="@null"
-            android:hint="Enter Instagram username..."
-            android:inputType="textPersonName"
-            android:textColor="@color/white"
-            android:textColorHint="@color/text_hint"
-            android:textSize="14sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/search_button"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <!-- Gradient Action Button -->
-        <FrameLayout
-            android:id="@+id/search_button"
-            android:layout_width="44dp"
-            android:layout_height="44dp"
-            android:background="@drawable/bg_purple_accent_gradient"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_gravity="center"
-                android:contentDescription="Search"
-                android:src="@drawable/search_icon"
-                app:tint="@color/white" />
-
-        </FrameLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
