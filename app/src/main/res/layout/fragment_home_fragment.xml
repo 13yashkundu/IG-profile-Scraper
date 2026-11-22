@@ -242,7 +242,6 @@
             android:layout_height="88dp"
             android:orientation="horizontal">
 
-            <!-- Profile Card (Selected) -->
             <LinearLayout
                 android:id="@+id/card_profile"
                 android:layout_width="82dp"
@@ -383,5 +382,8 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
