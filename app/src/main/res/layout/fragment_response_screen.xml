@@ -222,12 +222,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <LinearLayout
-                    android:id="@+id/card_profile"
-                    style="@style/CategoryChip">
-                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_profile" />
-                    <TextView style="@style/CategoryChipLabel" android:text="Profile" />
-                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/card_profile"-->
+<!--                    style="@style/CategoryChip">-->
+<!--                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_profile" />-->
+<!--                    <TextView style="@style/CategoryChipLabel" android:text="Profile" />-->
+<!--                </LinearLayout>-->
 
                 <LinearLayout
                     android:id="@+id/card_stories"
