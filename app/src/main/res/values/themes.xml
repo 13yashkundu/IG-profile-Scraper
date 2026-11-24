@@ -6,4 +6,9 @@
     </style>
 
     <style name="Theme.Scraper" parent="Base.Theme.Scraper" />
+
+    <!-- Circular Profile Image Shape Overlay -->
+    <style name="CircleImageView">
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>
