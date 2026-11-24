@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/bg_category_chip.xml -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#33A855F7">
+
+    <!-- Selected = soft purple tint + thin purple outline. Default = flat fill, no outline. -->
+    <item android:id="@android:id/background">
+        <selector>
+            <item android:state_selected="true">
+                <shape android:shape="rectangle">
+                    <solid android:color="#1FA855F7" />
+                    <stroke
+                        android:width="1dp"
+                        android:color="#66A855F7" />
+                    <corners android:radius="50dp" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/card_bg_dark" />
+                    <corners android:radius="50dp" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+
+    <!-- Keeps the ripple inside the pill shape -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFFFF" />
+            <corners android:radius="50dp" />
+        </shape>
+    </item>
+</ripple>

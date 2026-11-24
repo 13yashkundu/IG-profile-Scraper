@@ -205,84 +205,61 @@
 
         </LinearLayout>
 
-        <!-- Quick Action Buttons Row (Download Profile, View Stories, View Posts) -->
-<!--        <LinearLayout-->
-<!--            android:id="@+id/action_buttons_row"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:orientation="horizontal"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/bio_container">-->
+        <!-- Horizontal Category Pills Scroll Container -->
+        <HorizontalScrollView
+            android:id="@+id/category_pills_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bio_container">
 
-<!--            &lt;!&ndash; Action 1: Download HD Profile &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/btn_download_profile"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="42dp"-->
-<!--                android:layout_marginEnd="6dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/bg_purple_accent_gradient"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-bold"-->
-<!--                    android:text="HD Avatar"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:textSize="13sp" />-->
-<!--            </LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/card_profile"
+                    style="@style/CategoryChip">
+                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_profile" />
+                    <TextView style="@style/CategoryChipLabel" android:text="Profile" />
+                </LinearLayout>
 
-<!--            &lt;!&ndash; Action 2: View Stories &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/btn_view_stories"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="42dp"-->
-<!--                android:layout_marginHorizontal="3dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/bg_dark_card"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
+                <LinearLayout
+                    android:id="@+id/card_stories"
+                    style="@style/CategoryChip">
+                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_stories" />
+                    <TextView style="@style/CategoryChipLabel" android:text="Stories" />
+                </LinearLayout>
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-bold"-->
-<!--                    android:text="Stories"-->
-<!--                    android:textColor="@color/accent_purple_bright"-->
-<!--                    android:textSize="13sp" />-->
-<!--            </LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/card_posts"
+                    style="@style/CategoryChip">
+                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_posts" />
+                    <TextView style="@style/CategoryChipLabel" android:text="Posts" />
+                </LinearLayout>
 
-<!--            &lt;!&ndash; Action 3: View Posts &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:id="@+id/btn_view_posts"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="42dp"-->
-<!--                android:layout_marginStart="6dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/bg_dark_card"-->
-<!--                android:clickable="true"-->
-<!--                android:focusable="true"-->
-<!--                android:gravity="center"-->
-<!--                android:orientation="horizontal">-->
+                <LinearLayout
+                    android:id="@+id/card_reels"
+                    style="@style/CategoryChip">
+                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_reels" />
+                    <TextView style="@style/CategoryChipLabel" android:text="Reels" />
+                </LinearLayout>
 
-<!--                <TextView-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:fontFamily="sans-serif-bold"-->
-<!--                    android:text="Posts"-->
-<!--                    android:textColor="#60A5FA"-->
-<!--                    android:textSize="13sp" />-->
-<!--            </LinearLayout>-->
+                <LinearLayout
+                    android:id="@+id/card_highlights"
+                    style="@style/CategoryChip"
+                    android:layout_marginEnd="0dp">
+                    <ImageView style="@style/CategoryChipIcon" android:src="@drawable/ic_box_highlights" />
+                    <TextView style="@style/CategoryChipLabel" android:text="Highlights" />
+                </LinearLayout>
 
-<!--        </LinearLayout>-->
+            </LinearLayout>
+        </HorizontalScrollView>
 
 
 
