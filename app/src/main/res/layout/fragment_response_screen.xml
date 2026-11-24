@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/response_screen_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_premium_dark_gradient"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/response_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:context=".Respponse_screen">
+
+        <!-- Top Navigation Bar -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="Back"
+            android:focusable="true"
+            android:padding="4dp"
+            android:src="@drawable/ic_back_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_header_username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_header_username"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_header_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="sans-serif-black"
+            android:letterSpacing="0.02"
+            android:text="instagram"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Profile Picture & Stats Section Row -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Profile Picture"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_spy_hat_glasses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_header_username"
+            app:shapeAppearanceOverlay="@style/CircleImageView"
+            app:strokeColor="@color/accent_purple_bright"
+            app:strokeWidth="2.5dp" />
+
+        <!-- Stats Container (Posts, Followers, Following) -->
+        <LinearLayout
+            android:id="@+id/stats_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/profile_picture"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/profile_picture"
+            app:layout_constraintTop_toTopOf="@+id/profile_picture">
+
+            <!-- Posts Stat -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/posts_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="1,248"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/posts_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Posts"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Followers Stat -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/followers_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="672M"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/followers_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Followers"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Following Stat -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/following_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-bold"
+                    android:text="82"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/following_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Following"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Profile Bio & Meta Details Section -->
+        <LinearLayout
+            android:id="@+id/bio_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_picture">
+
+            <!-- Full Name -->
+            <TextView
+                android:id="@+id/full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:text="Instagram"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <!-- Category / Badge -->
+
+
+            <!-- Bio Description -->
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:lineSpacingExtra="3dp"
+                android:text="Discover what's new on Instagram 📸✨\nBringing you closer to the people &amp; things you love."
+                android:textColor="@color/text_primary"
+                android:textSize="13sp" />
+
+            <!-- External Link -->
+            <TextView
+                android:id="@+id/external_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="🔗 instagram.com"
+                android:textColor="@color/accent_purple_bright"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Quick Action Buttons Row (Download Profile, View Stories, View Posts) -->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/action_buttons_row"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:orientation="horizontal"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/bio_container">-->
+
+<!--            &lt;!&ndash; Action 1: Download HD Profile &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/btn_download_profile"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_marginEnd="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_purple_accent_gradient"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-bold"-->
+<!--                    android:text="HD Avatar"-->
+<!--                    android:textColor="@color/white"-->
+<!--                    android:textSize="13sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Action 2: View Stories &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/btn_view_stories"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_marginHorizontal="3dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_dark_card"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-bold"-->
+<!--                    android:text="Stories"-->
+<!--                    android:textColor="@color/accent_purple_bright"-->
+<!--                    android:textSize="13sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            &lt;!&ndash; Action 3: View Posts &ndash;&gt;-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/btn_view_posts"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="42dp"-->
+<!--                android:layout_marginStart="6dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/bg_dark_card"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:gravity="center"-->
+<!--                android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:fontFamily="sans-serif-bold"-->
+<!--                    android:text="Posts"-->
+<!--                    android:textColor="#60A5FA"-->
+<!--                    android:textSize="13sp" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
