@@ -4,6 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/posts_screen_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
+
+    <!-- Instagram 3-Column Posts Grid (XML Static Preview & Runtime Grid) -->
+    <GridLayout
+        android:id="@+id/grid_posts_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        app:flow_horizontalGap="50dp"
+        app:flow_verticalGap="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Row 1 -->
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <!-- Row 2 -->
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <!-- Row 3 -->
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+        <include
+            layout="@layout/item_post_grid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1" />
+
+    </GridLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
