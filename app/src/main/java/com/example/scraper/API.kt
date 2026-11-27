@@ -1,7 +1,7 @@
 package com.example.scraper
 
 import com.google.gson.JsonObject
-import okhttp3.Response
+import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.Header
 import retrofit2.http.Headers
